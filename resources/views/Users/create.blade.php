@@ -14,6 +14,8 @@
         <div class="row mb-4">
             <div class="col-md-6">
                 @livewire('user-create')          
+
+                {{-- @livewire('user-create', ['lazy' = true]) --}}
             </div>
         </div>
     </div>

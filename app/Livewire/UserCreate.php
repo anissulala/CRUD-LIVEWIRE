@@ -19,11 +19,13 @@ class UserCreate extends Component
 
     public function render()
     {
+        
         return view('livewire.user-create');
     }
 
     public function store()
     {
+        sleep(2);
         $this->validate([ 
             // required harus terisi
             'name' => 'required|string',
@@ -42,7 +44,7 @@ class UserCreate extends Component
             'foto' => $photoPath,
         ]);
 
-        // kita panggil properti kita name agar hilang
+        //name agar hilang
         $this->name = NULL;
         $this->email = NULL;
         $this->password = NULL;

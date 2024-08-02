@@ -48,7 +48,6 @@ class UserEdit extends Component
         if ($this->foto) {
             $photoPath = $this->foto->store('foto', 'public');
             $user->foto = $photoPath;
-
         }
 
         // kita panggil properti kita name agar hilang

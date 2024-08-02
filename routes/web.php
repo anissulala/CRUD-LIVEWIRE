@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Loading;
+use App\Livewire\CreatePost;
+use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -34,3 +37,7 @@ Route::get('/create', function () {
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/loading', Loading::class)->name('loading');
+
+Route::get('/post', CreatePost::class)->name('create-post');

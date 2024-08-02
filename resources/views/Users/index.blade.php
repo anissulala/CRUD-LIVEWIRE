@@ -13,11 +13,14 @@
         <h1 class="mb-4">Belajar Livewire CRUD</h1>
         <div class="row mb-4">
             <div class="col-md-6">
-                @livewire('user-create')          
+                @livewire('user-create')  
             </div>
         </div>
+        {{-- <div>
+            @livewire('create-post')
+        </div> --}}
         <div>
-            @livewire('user-table')
+            @livewire('user-table', ['lazy' => true])
         </div>
     </div>
 @endsection

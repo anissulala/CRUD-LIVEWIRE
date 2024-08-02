@@ -17,7 +17,7 @@
         <div class="row mb-4">
             <div class="col-md-6">
                 {{-- disamakan dengan controller edit --}}
-                @livewire('user-edit', ['user'=>$user])          
+                @livewire('user-edit', ['user'=> $user])          
             </div>
         </div>
     </div>
